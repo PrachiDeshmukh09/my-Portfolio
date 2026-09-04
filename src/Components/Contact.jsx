@@ -7,12 +7,10 @@ function Contact() {
 
         emailjs
             .sendForm(
-                emailjs.sendForm(
-                    "me_prachi",
-                    "template_32yimcm",
-                    e.target,
-                    "akfkCGoyKyMK3upLi"
-                )
+                "me_prachi",
+                "template_32yimcm",
+                e.target,
+                "akfkCGoyKyMK3upLi"
             )
             .then(() => {
                 alert("Thank you! Your message has been sent.");
