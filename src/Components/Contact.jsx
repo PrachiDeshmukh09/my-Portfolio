@@ -1,25 +1,10 @@
-import emailjs from "@emailjs/browser";
-
 function Contact() {
-
     function handleSubmit(e) {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                "me_prachi",
-                "template_32yimcm",
-                e.target,
-                "akfkCGoyKyMK3upLi"
-            )
-            .then(() => {
-                alert("Thank you! Your message has been sent.");
-                e.target.reset();
-            })
-            .catch((error) => {
-                console.log(error);
-                alert("Something went wrong. Please try again.");
-            });
+        e.currentTarget.reset();
+
+        alert("Thank you! Your message has been submitted.");
     }
 
     return (
@@ -37,14 +22,14 @@ function Contact() {
 
                 <input
                     type="text"
-                    name="from_name"
+                    name="name"
                     placeholder="Your Name"
                     required
                 />
 
                 <input
                     type="email"
-                    name="from_email"
+                    name="email"
                     placeholder="Your Email"
                     required
                 />

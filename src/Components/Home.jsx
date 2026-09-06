@@ -5,7 +5,7 @@ function Home() {
                 <p className="intro">Hello, I'm</p>
                 <h1>Prachi Deshmukh</h1>
 
-                <h2>Full-Stack MERN Developer</h2>
+                <h2>Full-Stack Developer</h2>
                 <p className="description">
                     I build scalable, responsive, and user-focused web
                     applications using MongoDB, Express.js, React, and Node.js.
